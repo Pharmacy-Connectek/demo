@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connectek Pharmacy Coaching</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* RESET & BASE */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:'Poppins', sans-serif; background:#fff; color:#333; line-height:1.6;}
+a {text-decoration:none;}
+img {max-width:100%; border-radius:8px;}
+/* NAVBAR */
+nav {background:#003d99; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:999;}
+nav .logo {color:#fff; font-size:1.4rem; font-weight:700;}
+nav ul {list-style:none; display:flex; gap:1.5rem;}
+nav ul li a {color:#fff; font-weight:500; transition:color .3s;}
+nav ul li a:hover {color:#ffd700;}
+/* HERO */
+.hero {background:linear-gradient(rgba(0,61,153,0.75), rgba(0,61,153,0.75)), url('https://images.unsplash.com/photo-1588776814546-55f42d9c5e28') center/cover no-repeat; color:#fff; text-align:center; padding:5rem 1rem;}
+.hero h1 {font-size:2.8rem; margin-bottom:1rem;}
+.hero p {max-width:700px; margin:auto; font-size:1.2rem; margin-bottom:2rem;}
+.cta-buttons a {display:inline-block; margin:0.5rem; padding:0.8rem 1.5rem; border-radius:30px; font-weight:600; transition:.3s;}
+.join {background:#ff4444; color:#fff; box-shadow:0 4px 10px rgba(255,68,68,0.4);}
+.join:hover {background:#e63a3a;}
+.consult {background:#ffd700; color:#000;}
+.consult:hover {background:#e6c200;}
+.download {background:#fff; color:#003d99; border:2px solid #003d99;}
+.download:hover {background:#003d99; color:#fff;}
+/* SECTION BASE */
+section {padding:4rem 1rem; max-width:1200px; margin:auto;}
+h2 {text-align:center; font-size:2rem; color:#003d99; margin-bottom:2rem;}
+/* ABOUT */
+.about {text-align:center; max-width:800px; margin:auto; font-size:1rem; color:#555;}
+/* PROGRAMS */
+.cards {display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:1.5rem;}
+.card {background:#fff; padding:1.5rem; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.08); transition:transform .3s, box-shadow .3s; text-align:center;}
+.card:hover {transform:translateY(-8px); box-shadow:0 10px 20px rgba(0,0,0,0.12);}
+.card h3 {color:#003d99; margin-bottom:0.5rem;}
+.card p {font-size:0.95rem; color:#555;}
+/* TESTIMONIALS */
+.testimonials {background:#f8f9fc;}
+.testimonial {background:#fff; padding:1.5rem; border-radius:15px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.05);}
+.testimonial p {font-style:italic; color:#555;}
+.testimonial h4 {margin-top:1rem; font-weight:600; color:#003d99;}
+/* CONTACT */
+form {max-width:600px; margin:auto;}
+input, textarea {width:100%; padding:0.8rem; margin-bottom:1rem; border-radius:8px; border:1px solid #ccc; font-size:1rem;}
+button {background:#003d99; color:#fff; padding:0.8rem 1.5rem; border:none; border-radius:8px; cursor:pointer; font-weight:600;}
+button:hover {background:#002b70;}
+/* FOOTER */
+footer {background:#002b70; color:#fff; text-align:center; padding:1rem; font-size:0.9rem; margin-top:3rem;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Connectek Pharmacy</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#testimonials">Success Stories</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Achieve Your Global Pharmacy Dreams</h1>
+  <p>Expert-led coaching for US, Canada, and Australia pharmacy licensing exams. Your career, our mission.</p>
+  <div class="cta-buttons">
+    <a href="#contact" class="join">Join Now</a>
+    </div>
+    <div class="cta-buttons">
+    <a href="#contact" class="consult">Book Free Consultation</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p class="about">
+    At Connectek, we prepare pharmacy professionals for international licensing exams and industry success.
+    Our tailored programs cover everything from language proficiency to specialized pharmaceutical knowledge,
+    ensuring you are fully equipped for your career abroad.
+  </p>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+  <h2>Our Programs</h2>
+  <div class="cards">
+    <div class="card">
+      <h3><a href= "us.html">US Pharmacy</h3>
+      <p>TOEFL, FPGEE, NAPLEX, Pharmacovigilance, and FDA Regulatory Affairs.</p></a>
+    </div>
+    <div class="card">
+      <h3><a href= "canada.html">Canada Pharmacy</h3>
+      <p>PEBC Evaluation & Qualifying Exams, Clinical Research, and Health Canada Compliance.</p></a>
+    </div>
+    <div class="card">
+      <h3><a href= "australia.html">Australia Pharmacy</h3>
+      <p>KAPS, OET, Australian Practice Standards, and TGA Regulatory Affairs.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials">
+  <h2>Success Stories</h2>
+  <div class="cards">
+    <div class="testimonial">
+      <p>"Thanks to Connectek, I passed my NAPLEX on the first attempt. The coaching was spot-on!"</p>
+      <h4>- Priya S.</h4>
+    </div>
+    <div class="testimonial">
+      <p>"The PEBC prep course was thorough and engaging. I now work in Canada as a licensed pharmacist."</p>
+      <h4>- Rajesh K.</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Their KAPS training made my move to Australia smooth. Highly recommend Connectek!"</p>
+      <h4>- Aisha M.</h4>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Connectek Pharmacy Coaching. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
