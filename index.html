@@ -176,8 +176,29 @@ footer {background:#002b70; color:#fff; text-align:center; padding:1rem; font-si
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-    <script>
+<!-- TESTIMONIALS --> 
+<section class="testimonial-section">
+  <button id="prevBtn" class="carousel-btn">&#10094;</button>
+
+  <div class="testimonial-container" id="testimonialContainer">
+    <div class="testimonial">
+      <p>“Connectek's coaching helped me crack the FPGEE on the first attempt. The guidance was top-notch!”</p>
+      <h4>– Anjali R., USA</h4>
+    </div>
+    <div class="testimonial">
+      <p>“Great mentorship and materials. I felt well-prepared and confident for my licensing exam.”</p>
+      <h4>– Rahim A., Canada</h4>
+    </div>
+    <div class="testimonial">
+      <p>“The Australia program was exactly what I needed. Highly recommend Connectek!”</p>
+      <h4>– Sarah T., Australia</h4>
+    </div>
+  </div>
+
+  <button id="nextBtn" class="carousel-btn">&#10095;</button>
+</section>
+
+ <script>
   const container = document.getElementById('testimonialContainer');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
@@ -207,27 +228,6 @@ footer {background:#002b70; color:#fff; text-align:center; padding:1rem; font-si
   setInterval(nextSlide, 3000);
 </script>
     
-<section class="testimonial-section">
-  <button id="prevBtn" class="carousel-btn">&#10094;</button>
-
-  <div class="testimonial-container" id="testimonialContainer">
-    <div class="testimonial">
-      <p>“Connectek's coaching helped me crack the FPGEE on the first attempt. The guidance was top-notch!”</p>
-      <h4>– Anjali R., USA</h4>
-    </div>
-    <div class="testimonial">
-      <p>“Great mentorship and materials. I felt well-prepared and confident for my licensing exam.”</p>
-      <h4>– Rahim A., Canada</h4>
-    </div>
-    <div class="testimonial">
-      <p>“The Australia program was exactly what I needed. Highly recommend Connectek!”</p>
-      <h4>– Sarah T., Australia</h4>
-    </div>
-  </div>
-
-  <button id="nextBtn" class="carousel-btn">&#10095;</button>
-</section>
-
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
   <h2>Contact Us</h2>
@@ -246,6 +246,7 @@ footer {background:#002b70; color:#fff; text-align:center; padding:1rem; font-si
 
 </body>
 </html>
+
 
 
 
