@@ -134,6 +134,54 @@ footer {background:#002b70; color:#fff; text-align:center; padding:1rem; font-si
       align-items: center;
       color: white;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.7);}
+    .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+    /* Responsive for smaller devices */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 15px; <div class="menu-toggle" onclick="document.querySelector('.navbar ul').classList.toggle('show')">
+    ☰
+</div>
+    }
+    .navbar ul {
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+    .navbar ul.show {
+        display: flex;
+    }
+    .banner {
+        height: 70vh;
+        background-size: cover;
+    }
+    .testimonial {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+/* Extra small devices */
+@media (max-width: 480px) {
+    .banner {
+        height: 60vh;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
 </style>
 </head>
 <body>
@@ -276,6 +324,7 @@ footer {background:#002b70; color:#fff; text-align:center; padding:1rem; font-si
 
 </body>
 </html>
+
 
 
 
