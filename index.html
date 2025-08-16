@@ -187,7 +187,9 @@ footer {background:#002b70; color:#fff; text-align:center; padding:1rem; font-si
 .banner {
     height: 100vh; /* full screen height */
     width: 100%;
+    min-height: 60vh; /* adjusts height on small screens */
     background: url('pharmacy.png') no-repeat center center/cover;
+    background-size: cover; /* ensures image always covers */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,6 +365,7 @@ menuToggle.addEventListener('click', () => {
 
 </body>
 </html>
+
 
 
 
