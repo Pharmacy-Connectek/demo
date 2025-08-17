@@ -8,20 +8,82 @@
 <style>
 * {margin:0; padding:0; box-sizing:border-box;}
 body {font-family:'Poppins', sans-serif; background:#fff; color:#333; line-height:1.6;}
-nav { height: 60px; background-color: rgba(255,255,255,1);  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); padding:1rem 2rem; display:flex; justify-content:space-between; 
-     align-items:center; position:sticky; top:0; z-index:50;   position: fixed;
-    top: 0;
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 999;
+  padding: 10px 20px;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #003d99;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar ul li a {
+  color: #003d99;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffd700;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 100%;
-    height: 50px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    z-index: 999;}
-    .scrolled nav {
-    background: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);}
-nav .logo {color:rgba(255,255,255,1); font-size:1.4rem; font-weight:700;}
-nav ul {list-style:none; display:flex; gap:1.5rem;}
-nav ul li a {color:#003d99; text-decoration:none; font-weight:600;}
-nav ul li a:hover {color:#ffd700;}
+    background: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #003d99;
+  }
+}
 section {padding:3rem 1rem; max-width:1000px; margin:auto;}
 h1 {text-align:center; color:#003d99; margin-bottom:1rem;}
 h2 {color:#ff4444; margin-top:2rem;}
@@ -32,14 +94,19 @@ footer {background:#002b70; color:#fff; text-align:center; padding:1rem; margin-
 </head>
 <body>
 
-<nav>
- <header style="display: flex; align-items: center; padding: 20px; background-color: #003d9; box-shadow: 0 2px 4px rgba(0,0,0,0);">
-  <a href="index.html">
-    <img src="Untitled design.png" alt="Connectek Pharmacy Logo" style="height: 60px;">
-      </a>
-  <h1 style="margin-left: 15px; font-size: 24px; color: #003d99;">Connectek Pharmacy</h1>
-</header>
-  <ul>
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="Untitled design.png" alt="Connectek Pharmacy Logo" style="height: 50px;">
+      <span>Connectek Pharmacy</span>
+    </a>
+
+    <!-- Hamburger icon -->
+    <div class="menu-toggle" id="menuToggle">☰</div>
+
+    <!-- Nav links -->
+    <ul id="navLinks">
     <li><a href="index.html">Home</a></li>
     <li><a href="us.html">US Pharmacy</a></li>
     <li><a href="canada.html">Canada Pharmacy</a></li>
@@ -81,6 +148,16 @@ footer {background:#002b70; color:#fff; text-align:center; padding:1rem; margin-
   </div>
 </section>
 
+<script>
+// Mobile menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+</script>
+     
 <footer>
   <p>© 2025 Connectek Pharmacy Coaching. All rights reserved.</p>
 </footer>
